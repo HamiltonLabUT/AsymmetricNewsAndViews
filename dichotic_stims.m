@@ -51,16 +51,19 @@ for spec_cut = [0.6 0.8]
     print_quality_fig(gcf,sprintf('speclow_%d.eps', spec_cut),8,4,2,'inches','epsc');
 end
 
+% Show range of modulation spectrum with spectral cut-off
 figure; imagesc(MS_speccut.x_axis, MS_speccut.y_axis, log(MS_speccut.new_MS)); axis xy;
 ylim([0 MS_speccut.y_axis(93)]);
 colormap(parula)
 print_quality_fig(gcf,sprintf('speccut_MPS.eps'),8,2,2,'inches','epsc');
 
+% Show range of modulation spectrum with temporal cut-off
 figure; imagesc(MS_tempcut.x_axis, MS_tempcut.y_axis, log(MS_tempcut.new_MS)); axis xy;
 ylim([0 MS_tempcut.y_axis(93)]);
 colormap(parula)
 print_quality_fig(gcf,sprintf('tempcut_MPS.eps'),8,2,2,'inches','epsc');
 
+% Show original modulation power spectrum
 figure; imagesc(MS_tempcut.x_axis, MS_tempcut.y_axis, log(MS_tempcut.orig_MS)); axis xy;
 ylim([0 MS_tempcut.y_axis(93)]);
 colormap(parula)
