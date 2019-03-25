@@ -3,5 +3,5 @@ For creating figures from Hamilton (2019) The asymmetric auditory cortex. Nature
 
 In reference to Flinker et al (2019). https://www.nature.com/articles/s41562-019-0548-z
 
-First get code from Flinker et al: https://github.com/flinkerlab/SpectroTemporalModulationFilter
-Then run dichotic_stims.m in MATLAB.
+* First get code from Flinker et al: https://github.com/flinkerlab/SpectroTemporalModulationFilter
+* Then run dichotic_stims.m in MATLAB. You can replace the .wav file with your own to see effects on other sounds.
